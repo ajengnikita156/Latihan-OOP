@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+</head>
+
+<style>
+    body{
+        background-color: white;
+    }
+
+.box{
+    width: 900px;
+    height: 250px;
+    
+}
+</style>
+<body>  
+ <div class="nav bg-dark fixed-top  ">
+  <h1 style="color: aliceblue; font-family: sans-serif; font-size: 30PX;">OBJECT JAVASCRIPT</h1>
+ </div><br><br><br>
+    <!--objek ke 1-->
+    <center>
+    <img src="bola1.jpg" style="width: 50px; height: 50px;">
+
+      <br>
+      <div class="box">
+      <table class="table table-striped">
+        <tr class="table-primary">
+
+            <th class="table-dark">NO</th>
+            <th>OBJECT</th>
+            <th>PROPERTI</th>
+            <th>METHOD</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>BOLA</td>
+            <td>NAME:BOLA BULAT</td>
+            <td id="ditendang"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>MODEL:SEPAK BOLA</td>
+            <td id="dilempar"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td> COLOR:PUTIH HITAM</td>
+            <td id="dipegang"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>WIGHT:450 GRAM</td>
+            <td id="dioper"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>DIAMETER: 70 CM</td>
+            <td id="disimpan"></td>
+        </tr>
+    </table>
+</div>
+
+
+    <script>
+     var bola = {
+           name: "bulat",
+           model: "sepak bola",
+           color: "putih hitam",
+           wight: "450 gram",
+           diameter:"70 cm",
+
+        ditendang: function(){
+           document.getElementById("ditendang").innerHTML="BOLA DITENDANG";
+        },
+        dilempar: function(){
+            document.getElementById("dilempar").innerHTML="BOLA DILEMPAR";
+        },
+        dipegang: function(){
+            document.getElementById("dipegang").innerHTML="BOLA DIPEGANG";
+        },
+        dioper: function(){
+            document.getElementById("dioper").innerHTML="BOLA DIOPER";
+        },
+        disimpan: function(){
+            document.getElementById("disimpan").innerHTML="BOLA DISIMPAN";
+        }
+       };
+
+bola.ditendang();
+bola.dilempar();
+bola.dipegang();
+bola.dioper();
+bola.disimpan();
+    </script>
+</center>
+
+<!--objek ke 2-->
+    <center>
+        <div class="box">
+        <img src="komputer2.jpg" style="width: 50px; height: 50px;">
+
+        <br>
+        <table class="table table-striped">
+            <tr class="table-success">
+            <th class="table-dark">NO</th>
+            <th>OBJECT</th>
+            <th>PROPERTI</th>
+            <th>METHOD</th>
+           </tr>
+           <tr>
+               <td>2.</td>
+               <td>KOMPUTER</td>
+               <td>NAME:ASUS</td>
+               <td id="menyala"></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td></td>
+               <td>MODEL:ESC45Y</td>
+               <td id="dilihat"></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td></td>
+               <td> COLOR:GREY</td>
+               <td id="dijalankan"></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td></td>
+               <td>TAHUN:2020</td>
+               <td id="hidup"></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td></td>
+               <td>FREE:CHARGER</td>
+               <td id="mati"></td>
+           </tr>
+       </table>
+       </div>
+    </center>
+       <script>
+           var komputer = {
+           name:"asus", 
+           model:"esc45y", 
+           color:"grey",
+           tahun:"2020",
+           free:"charger",
+       
+         menyala: function(){
+        document.getElementById("menyala").innerHTML="KOMPUTER MENYALA";
+        },
+        dilihat: function(){
+            document.getElementById("dilihat").innerHTML="KOMPUTER DAPAT DILIHAT";
+        },
+        dijalankan: function(){
+            document.getElementById("dijalankan").innerHTML="KOMPUTER DAPAT DIJALANKAN";
+        },
+        hidup:function(){
+            document.getElementById("hidup").innerHTML="KOMPUTER DAPAT DIHIDUPKAN";
+        },
+        mati: function(){
+            document.getElementById("mati").innerHTML="KOMPUTER DAPAT DIMATIKAN";
+        },
+       };
+
+komputer.menyala();
+komputer.dilihat();
+komputer.dijalankan();
+komputer.hidup();
+komputer.mati();
+       </script>
+    
+<!--objek ke 3-->
+
+   <center>
+    <div class="box"><br><br>
+    <img src="jam3.jpg" style="width: 50px; height: 50px;">
+
+    <br>
+    <table class="table table-striped">
+        <tr class="table-danger">
+        <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>3.</td>
+           <td>JAM KACA</td>
+           <td>NAME:JAM KACA</td>
+           <td id="berjalan"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>MODEL:EPG90</td>
+           <td id="berputar"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:RED</td>
+           <td id="berhenti"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>WIGHT:+- 500 GRAM</td>
+        <td id="detik"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>JARUM:PANJANG-PENDEK</td>
+        <td id="angka"></td>
+    </tr>
+   </table>
+   </div>
+   <script>
+       var jam = {
+
+type:"jam kaca", 
+model:"epg90", 
+color:"red",
+weight:"+-500gram",
+jarum:"panjang-pendek",
+   
+     berputar: function(){
+    document.getElementById("berputar").innerHTML="JAM TERUS BERPUTAR";
+    },
+    berjalan: function(){
+        document.getElementById("berjalan").innerHTML="JAM SELALU BERJALAN";
+    },
+    berhenti: function(){
+        document.getElementById("berhenti").innerHTML="JAM BERHENTI";
+    },
+    detik: function(){
+        document.getElementById("detik").innerHTML="JAM MEMPUNYAI DETIK";
+    },
+    angka: function(){
+        document.getElementById("angka").innerHTML="JAM MEMPUNYAI 12 ANGKA 24 JAM";
+    },
+   };
+jam.berputar();
+jam.berjalan();
+jam.berhenti();
+jam.angka();
+jam.detik();
+   </script>
+</center>
+
+<!--objek ke 4-->
+<center>
+    <div class="box"><br><br><br><br><br>
+    <img src="papann4.jpg" style="width: 50px; height: 50px;">
+
+    <br>
+    <table class="table table-striped">
+        <tr class="table-primary">
+         <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>4.</td>
+           <td>PAPAN TULIS</td>
+           <td>NAME:PAPAN TULIS</td>
+           <td id="menulis"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>MODEL: UNTUK SEKOLAH</td>
+           <td id="Dilihat"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR: WHITE</td>
+           <td id="dihapus"></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td> TINGGI:2M</td>
+         <td id="tinggi"></td>
+       </tr>
+       <tr>
+        <td></td>
+        <td></td>
+        <td>LEBAR:1,8 M</td>
+        <td id="lebar"></td>
+      </tr>
+   </table>
+</div>
+   <script>
+       var papan = {
+type:"persegipanjang", 
+model:"sekolah", 
+color:"putih",
+tinggi:"2m",
+lebar:"1,8m",
+    menulis: function(){
+    document.getElementById("menulis").innerHTML="PAPAN UNTUK MENULIS";
+    },
+    Dilihat: function(){
+        document.getElementById("Dilihat").innerHTML="PAPAN DAPAT DILIHAT SISWA";
+    },
+    dihapus: function(){
+        document.getElementById("dihapus").innerHTML="CORETAN DAPAT DIHAPUS";
+    },
+    tinggi: function(){
+        document.getElementById("tinggi").innerHTML="PAPAN TINGGI 2 METER";
+    },
+    lebar: function(){
+        document.getElementById("lebar").innerHTML="PAPAN LEBAR 1,8 METER";
+    },
+   };
+
+   papan.menulis();
+   papan.Dilihat();
+   papan.dihapus();
+   papan.tinggi();
+   papan.lebar();
+   </script>
+
+
+<!--objek ke 5-->
+<center>
+    <div class="box"><br><br><br><br><br><br><br>
+
+    <img src="keyboard5.jpg" style="width: 50px; height: 50px;">
+
+    <br>
+   <table class="table table-striped">
+    <tr class="table-warning">
+        <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>5.</td>
+           <td>KEYBOARD</td>
+           <td>NAME:KEYBOARD RKS56</td>
+           <td id="klik"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>TYPE: UNTUK KOMPUTER Y78</td>
+           <td id="mengetik"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:BLACK</td>
+           <td id="input"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>MODEL:LENGKAP</td>
+        <td id="perintah"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>WIGHT:250 GRAM</td>
+        <td id="menampilkan"></td>
+    </tr>
+   </table>
+   </div>
+   <script>
+       var keyboard = {
+           name:"keyboard rks56",
+           type:"untuk komputer y78",
+           color:"black",
+           model:"lengkap",
+           wight:"250 gram",
+    klik: function(){
+    document.getElementById("klik").innerHTML="KEYBOARD BISA DIKLIK";
+    },
+    mengetik: function(){
+        document.getElementById("mengetik").innerHTML="KEYBOARD UNTUK MENGETIK";
+    },
+    input: function(){
+        document.getElementById("input").innerHTML="KEYBOARD UNTUK INPUT DATA";
+    },
+    perintah: function(){
+        document.getElementById("perintah").innerHTML="TOMBOL PERNTAH BERUPA TEKS";
+    },
+    menampilkan: function(){
+        document.getElementById("menampilkan").innerHTML="UNTUK MENAMPILKAN DATA INPUTAN";
+    },
+   };
+
+   keyboard.klik();
+   keyboard.mengetik();
+   keyboard.input();
+   keyboard.perintah();
+   keyboard.menampilkan();
+   </script>
+
+
+<!--objek ke 6-->
+<center>
+    <div class="box"><br><br><br><br><br><br><br><br><br>
+
+    <img src="mose6.jpeg" style="width: 50px; height: 50px;">
+
+    <br>
+    <table class="table table-striped">
+        <tr class="table-info">
+            <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>6.</td>
+           <td>MOUSE</td>
+           <td>NAME:MOUSE DOLL</td>
+           <td id="klikk"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>TYPE:PGN08</td>
+           <td id="penunjuk"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:BLACK</td>
+           <td id="memilih"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>MODEL:KABEL</td>
+        <td id="scroll"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>WIGHT:50 GRAM</td>
+        <td id="mengatur"></td>
+    </tr>
+   </table>
+   </div>
+   <script>
+       var mouse = {
+           name:"mouse doll",
+           type:"pgn088",
+           color:"black",
+           model:"kabel",
+           wight:"50 gram",
+    klikk: function(){
+    document.getElementById("klikk").innerHTML="MOUSE BISA DIKLIK";
+    },
+    penunjuk: function(){
+        document.getElementById("penunjuk").innerHTML="MOUSE SEBAGAI ALAT PENUNJUK";
+    },
+    memilih: function(){
+        document.getElementById("memilih").innerHTML="MOUSE UNTUK MEMILIH OBJEK";
+    },
+    scroll: function(){
+        document.getElementById("scroll").innerHTML="MELAKUKAN OPERASI SCROLL";
+    },
+    mengatur: function(){
+        document.getElementById("mengatur").innerHTML="MENGATUR POSISI KURSOR";
+    },
+   };
+
+mouse.klikk();
+mouse.penunjuk();
+mouse.memilih();
+mouse.scroll();
+mouse.mengatur();
+   </script>
+
+
+<!--objek ke 7-->
+<center>
+    <div class="box">
+<br><br><br><br><br><br><br><br><br><br><br>
+    <img src="piring7.jpg" style="width: 50px; height: 50px;">
+
+    <br>
+    <table class="table table-striped">
+       <tr class="table-danger">
+        <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>7.</td>
+           <td>PIRING</td>
+           <td>NAME:PIRING</td>
+           <td id="alat"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>DIAMETER:30CM</td>
+           <td id="tempat"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:RANDOM</td>
+           <td id="souvenir"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>MODEL: MOTIF</td>
+        <td id="promosi"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>WIGHT: 500 GRAM</td>
+        <td id="meletakkan"></td>
+    </tr>
+   </table>
+   </div>
+   <script>
+       var piring = {
+           name:"piring",
+           Diameter:"30cm",
+           color:"random",
+           model:"motif",
+           wight:"500 gram",
+   alat : function(){
+    document.getElementById("alat").innerHTML="SEBAGAI ALAT MAKAN";
+    },
+    tempat: function(){
+        document.getElementById("tempat").innerHTML="TEMPAT MELETAKKAN MAKANAN";
+    },
+    souvenir: function(){
+        document.getElementById("souvenir").innerHTML="DAPAT DIJADIKAN SOUVENIR";
+    },
+    promosi: function(){
+        document.getElementById("promosi").innerHTML="UNTUK MEDIA PROMOSI ";
+    },
+    meletakkan: function(){
+        document.getElementById("meletakkan").innerHTML="UNTUK MELETAKKAN MAKANAN";
+    },
+   };
+
+piring.alat();
+piring.tempat();
+piring.souvenir();
+piring.promosi();
+piring.meletakkan();
+</script>
+
+<!--objek ke 8-->
+<center>
+    <div class="box">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <img src="sendokk8.png" style="width: 50px; height: 50px;">
+
+    <br>
+    <table class="table table-striped">
+        <tr class="table-dark">
+            <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>8.</td>
+           <td>SENDOK</td>
+           <td>NAME:SENDOK</td>
+           <td id="alatt"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>PANJANG:12CM</td>
+           <td id="bantu"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:SILVER</td>
+           <td id="souvenirr"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>TYPE:ALUMUNIUM</td>
+        <td id="Digunakan"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>ASAL:INDONESIA</td>
+        <td id="Rak"></td>
+    </tr>
+   </table>
+   </div>
+   <script>
+       var sendok = {
+           name:"sendok",
+           panjang:"12cm",
+           color:"silver",
+           type:"alumunium",
+           asal:"indonesia",
+   alatt : function(){
+    document.getElementById("alatt").innerHTML="SEBAGAI ALAT MAKAN";
+    },
+    bantu: function(){
+        document.getElementById("bantu").innerHTML="SEBAGAI ALAT BANTU MAKAN";
+    },
+    souvenirr: function(){
+        document.getElementById("souvenirr").innerHTML="DAPAT DIJADIKAN SOUVENIR";
+    },
+    Digunakan: function(){
+        document.getElementById("Digunakan").innerHTML="DIGUNAKAN UNTUK MAKAN ";
+    },
+    Rak: function(){
+        document.getElementById("Rak").innerHTML="DAPAT DISIMPAN DI RAK";
+    },
+   };
+
+sendok.alatt();
+sendok.bantu();
+sendok.souvenirr();
+sendok.Digunakan();
+sendok.Rak();
+</script>
+
+
+<!--objek ke 9-->
+<center>
+    <div class="box">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <img src="motor9.jpg" style="width: 60px; height: 70px;">
+
+    <br>
+    <table class="table table-striped">
+        <tr class="table-success">
+            <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       </tr>
+       <tr>
+           <td>9.</td>
+           <td>MOTOR</td>
+           <td>TYPE:BEATT</td>
+           <td id="mulai"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>MODEL:PERT709I</td>
+           <td id="mengemudi"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:BLUE</td>
+           <td id="mengerem"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>TAHUN:2021</td>
+        <td id="Berjalan"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>ASAL:INDONESIA</td>
+        <td id="berhentii"></td>
+    </tr>
+   </table>
+   </div>
+   <script>
+       var motor = {
+           type:"beatt",
+           model:"PERT709I",
+           color:"blue",
+           tahun:"2021",
+           asal:"indonesia",
+   mulai: function(){
+    document.getElementById("mulai").innerHTML="MOTOR MULAI BERJALAN";
+    },
+    mengemudi: function(){
+        document.getElementById("mengemudi").innerHTML="SAYA MENGEMUDI MOTOR";
+    },
+    mengerem: function(){
+        document.getElementById("mengerem").innerHTML="MOTOR BISA MENGEREM";
+    },
+    Berjalan: function(){
+        document.getElementById("Berjalan").innerHTML="MOTOR TERUS BERJALAN ";
+    },
+    berhentii: function(){
+        document.getElementById("berhentii").innerHTML="MOTOR BERHENTI";
+    },
+   };
+
+motor.mulai();
+motor.mengemudi();
+motor.mengerem();
+motor.Berjalan();
+motor.berhentii();
+</script>
+
+<!--objek ke 10-->
+<center>
+    <div class="box">
+    <br><br><br><br><br><br><br><br>
+    r><br><br><br><br><br><br><br><br><br><br><br>
+    <img src="sepeda10.jpg" style="width: 60px; height: 70px;">
+
+    <br>
+    <table class="table table-striped">
+        <tr class="table-info">
+            <th class="table-dark">NO</th>
+        <th>OBJECT</th>
+        <th>PROPERTI</th>
+        <th>METHOD</th>
+       <tr>
+           <td>10.</td>
+           <td>SEPEDA</td>
+           <td>TYPE:BMX</td>
+           <td id="mulaii"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td>MODEL:PE24R</td>
+           <td id="mengemudIi"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td> COLOR:BLACK</td>
+           <td id="mengeremM"></td>
+       </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>ASAL:INDONESIA</td>
+        <td id="BerjalaN"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>TAHUN:2022</td>
+        <td id="Berhentii"></td>
+    </tr>
+   </table>
+</div>
+   <script>
+       var sepeda = {
+           type:"bmx",
+           model:"PE24R",
+           color:"black",
+           tahun:"2022",
+           asal:"indonesia",
+   mulaii: function(){
+    document.getElementById("mulaii").innerHTML="SEPEDA MULAI BERJALAN";
+    },
+    mengemudIi: function(){
+        document.getElementById("mengemudIi").innerHTML="SAYA NAIK SEPEDA";
+    },
+    mengeremM: function(){
+        document.getElementById("mengeremM").innerHTML="SEPEDA BISA MENGEREM";
+    },
+    BerjalaN: function(){
+        document.getElementById("BerjalaN").innerHTML="SEPEDA TERUS BERJALAN ";
+    },
+    Berhentii: function(){
+        document.getElementById("Berhentii").innerHTML="SEPEDA BERHENTI";
+    },
+   };
+
+   sepeda.mulaii();
+   sepeda.mengemudIi();
+   sepeda.mengeremM();
+   sepeda.BerjalaN();
+   sepeda.Berhentii();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="SPA Example">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Handri Hermawan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+   
+</head>
+<style>
+
+</style>
+<body style="background-image:url() ;">
+    <th><label align="landscape"  id="cetak" >
+<center>
+<div >
+    <h1 style="color: black; font-family: sans-serif; font-size: 30PX;">PENGGAJIAN KARYAWAN</h1>
+    <table border="0">
+   <tr>    
+    <th>NAMA</th>
+    <th><input type="text"  id="nama" onchange="total()" ></th>
+   </tr>
+   <tr>    
+    <th>GOLONGAN</th>
+    <th><select id="jabatan" onchange="total()">
+   <option>Golongan1</option>
+   <option>Golongan2</option>
+   <option>Golongan3</option>
+    </select></th>
+   </tr>
+    </select></th>
+   </tr>
+   <tr>    
+    <th>STATUS</th>
+    <th><select id="status" onchange="total()">
+   <option>ya</option>   
+   <option>tidak</option>
+    </select></th>
+   </tr>
+   <tr>    
+    <th>GAJI</th>
+    <th><input type="text" style="background: #ffffff" id="gaji" disabled></th>
+   </tr>
+   <tr>
+       <th>TUNJANGAN</th>
+       <th><input type="text" id="tun" disabled></th>
+   </tr>   
+   <tr>
+       <th>PAJAK</th>
+       <th><input type="text" id="pajak" disabled></th>
+   </tr>
+   <tr>    
+    <th>TOTAL GAJI</th>
+    <th><input type="text" style="background: #ffffff" id="gaji1" disabled></th>
+   </tr>
+  </table>
+
+     <button onclick  ="total()">proses</button>
+
+  <script type="text/javascript">
+    
+  function total() {
+   var nama = document.getElementById('nama').value;
+    var jabatan= document.getElementById("jabatan").value;
+       var status= document.getElementById("status").value;
+      var gaji= document.getElementById("gaji").value;
+     if (jabatan == "Golongan1"){
+ b=500000;}
+ else if (jabatan=="Golongan2"){
+b=750000;}
+else if(jabatan == "Golongan3"){
+    b=900000
+}
+
+ document.getElementById('gaji').value = b;
+      var status = document.getElementById('status').value;
+
+ if (status == "ya"){
+ c=500000;}
+  else if (status="tidak"){
+c=0;}
+document.getElementById('gaji1').value = c;
+
+
+//gaji +tunjangan
+var tun = document.getElementById("tun").value;
+if (jabatan == "Golongan1"){
+ a=500000;}
+ else if (jabatan=="Golongan2"){
+a=750000;}
+else if(jabatan == "Golongan3"){
+    a=900000
+}
+if (status == "ya"){
+ a=500000;}
+  else if (status="tidak"){
+a=0;}
+document.getElementById("tun").value = a;
+var total = parseInt(b) + parseInt(c);
+
+
+var pajak = document.getElementById("pajak").value;
+if (status == "ya"){
+    p=50000;}
+else if(status =="tidak"){
+    p = 0;}
+document.getElementById("pajak").value = p;
+
+  var total = parseInt(b) + parseInt(c) - parseInt(p) ;
+  document.getElementById('gaji1').value = total;
+  }
+  
+  </script>   
+ </div>
+
+ 
+</body>
+</html>
